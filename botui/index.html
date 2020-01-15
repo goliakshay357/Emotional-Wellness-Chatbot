@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <title>ML chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css?family=Gelasio|Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background: white; overflow-y: scroll;">
+  
+  <div class="container" style="font-family: 'Roboto', sans-serif;">
+    <!-- header -->
+    <div class="jumbotron jumbotron-fluid" style="padding-top: 20px; background-color: white;">
+      <!-- <div class="container"> -->
+        <div class="text-center">
+          <img class="img-fluid" src="css/iiitb.png" alt="IITB LOGO">
+          <img class="img-fluid" src="css/dribbbbble.gif" alt="IITB LOGO" style="width: 300px;">
+        </div>
+        <h1 class="display-4 text-center" style="font-family: 'Gelasio', serif;">Emotional Wellness App </h1>
+        <p class="lead text-center" style="font-family: 'Gelasio', serif;">Project ChatBot under guidance Prof.J Dinesh Babu</p>
+        <hr class="my-4">
+        <h2 style="font-family: 'Gelasio', serif;">Overview</h2>
+        <p>This is an emotional wellness chatbot that has an automatic generated trained conversation; Web and PWA application. The chatbot is trained by the dataset given below <span style="color: blue;">( with reference from Dr. Gangadhar Garipelli )</span> and can be downloaded.
+        </p>
+
+        <h2 style="margin-top: 30px; font-family: 'Gelasio', serif;">Hightlights</h2>
+        <ol>
+          <li>Done using Google Dialogflow API</li>
+          <li>The API is linked in Nodejs application where node acts as an interface between client and DialogFlow</li>
+          <li>Follow Up intends are handled in DialogFlow.</li>
+          <li>User-Friendly and Responsive</li>
+          <li>Audio to Text and Text to Audio is also available.</li>
+          <li>PWA access is available.</li>
+        </ol>
+
+        <h2 style="margin-top: 30px; font-family: 'Gelasio', serif;">Future Work</h2>
+        <p>Add video Interaction.</p>
+        
+        <div class="text-center" style="margin-top: 50px;">
+          <a class="btn btn-primary btn-lg" href="css/convo.pdf" role="button" download>Download Conversation</a>
+        </div>
+
+
+      <!-- </div> -->
+    </div>
+    <!-- end of header -->
+
+    <!-- body -->
+
+  </div>
+
+
+
+
+<div class="chat" style="position: relative; top: 300px; margin-bottom: 50px;">
+  <div class="chat-title">
+    <h1 style="font-size: 15px; margin-bottom: 5px;">Emotional Wellness Chatbot</h1>
+    <h2>i am customer support chat bot</h2>
+    <figure class="avatar">
+      <img src="css/bot.png"/></figure>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <form class="message-box" id="mymsg" method="POST">
+    <input type="text" id="MSG" name="MSG" class="message-input" placeholder="Type message..." >
+   
+    <i class="fas fa-microphone" id="start-record-btn"></i>
+    <button type="submit" class="message-submit">Send</button>
+  </form>
+  <h3 class="no-browser-support" hidden>Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+</div>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+  <script  src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    
+</body>
+
+</html>
